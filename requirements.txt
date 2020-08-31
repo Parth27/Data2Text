@@ -1,0 +1,9 @@
+### Requirements for code ###
+pandas
+numpy>=1.6.1
+tensorflow-gpu==1.15
+nltk
+rouge
+spacy
+scipy>=0.9
+scikit-learn
