@@ -56,6 +56,7 @@ def build_vocab(data,len_vocab):
     vocab['UNK']=len(vocab)
     vocab['<start>'] = len(vocab)
     vocab['<stop>'] = len(vocab)
+    vocab['<pad>'] = len(vocab)
 
     reverse_vocab={}
     for i in range(len(words)):
@@ -64,6 +65,7 @@ def build_vocab(data,len_vocab):
     reverse_vocab[len(reverse_vocab)]='UNK'
     reverse_vocab[len(reverse_vocab)]='<start>'
     reverse_vocab[len(reverse_vocab)]='<stop>'
+    reverse_vocab[len(reverse_vocab)]='<pad>'
 
     return vocab,reverse_vocab
 
